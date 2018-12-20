@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Partners</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Sofia'>
+    <script src="https://unpkg.com/web-animations-js@2.3.1/web-animations.min.js"></script>
+    <script src="https://unpkg.com/hammerjs@2.0.8/hammer.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.7.1/dist/muuri.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/system.css"> 
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+
+</head>
+<body>
+
+
+
+<div class="back back2">
+    <header>
+        <a class="skip-main" href="#main-content">Skip to main content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">HomePage</a></li>
+                <li><a href = "stats.html">Court</a></li>
+                <li><a class = "current_page" href = "partners.html">Partners</a></li>
+                <li><a href = "media.html">Social Media</a></li>
+                <li><a href = "family.html">Family Foundation</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+
+<main id = "main-content" tabindex="-1">
+    <button id="myBtn" title="Go to top">Top</button>
+
+<h1 class="title_text">
+        <i class="fab fa-accusoft"></i>Partners
+</h1>
+
+
+
+<div class="grid">   
+    <div class="item">
+        <div class="item-content">
+            <a href="https://www.nike.com/us/en_us/c/jordan" data-lightbox="image-1">
+                <img src="images/par1.png" alt="Jordan">
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-content">
+            <a href="https://www.jasonbalcom.com/localagent" data-lightbox="image-2">
+                <img src="images/par2.png" alt="Jasonal">
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-content">
+            <a href="http://shop.muzikconnect.com" data-lightbox="image-3">
+                <img src="images/par3.png" alt="Muzik">
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-content">
+            <a href="https://d1training.com/" data-lightbox="image-4">
+                <img src="images/par4.png" alt="D1training">
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-content">
+            <a href="https://endlessentertainment.com/" data-lightbox="image-5">
+                <img src="images/par5.png" alt="urthworx">
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-content">
+            <a href="http://www.paniniamerica.net/" data-lightbox="image-6">
+                <img src="images/par6.png" alt="panini">
+            </a>
+        </div>
+    </div>
+</div>
+</main>
+
+<script>var grid = new Muuri('.grid', {
+        dragEnabled: true
+      });</script>
+
+
+
+
+<footer>
+    <div>Yipeng Chen</div>
+    <div><a href="mailto: chenyp@umich.edu">Email: chenyp@umich.edu</a></div>
+    <div>Personal Website: <a href="https://github.com/chenyipeng1">https://github.com/chenyipeng1</a></div>
+  </footer>
+
+
+  <script>
+        window.onscroll = function(){
+            if($(document).scrollTop() > 20){
+                $("#myBtn").show();
+            }
+            else{
+                $("#myBtn").hide();
+            }
+        }
+        $("#myBtn").click(function(){
+            $(document).scrollTop(0)
+        });
+    </script>
+
+</body>
+</html>

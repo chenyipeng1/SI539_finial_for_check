@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Family</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/system.css"> 
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link  rel="stylesheet" href='https://fonts.googleapis.com/css?family=Sofia'>
+</head>
+<body>
+
+
+
+<div class="back back4">
+    <header>   
+        <a class="skip-main" href="#main-content">Skip to main content</a> 
+        <nav>
+            <ul>
+                <li><a href = "index.html">HomePage</a></li>
+                <li><a href = "stats.html">Court</a></li>
+                <li><a href = "partners.html">Partners</a></li>
+                <li><a href = "media.html">Social Media</a></li>
+                <li><a class = "current_page" href = "family.html">Family Foundation</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<main id = "main-content" tabindex="-1">
+
+    <button id="myBtn" title="Go to top">Top</button>
+
+    <h1 class="title_text">
+        <i class="fab fa-bitcoin"></i>Family Funds
+</h1>
+
+
+
+<div class="family_text">
+    <p>
+        The Chris Paul Family Foundation strives to positively impact individuals and families by leveling the playing field in Education, Sports and Life. The foundation provides resources that enrich and strengthen healthy development of strong communities.
+        <br><br>
+        In 2005, Chris and his family established the CP3 Foundation, a philanthropic partnership with The Winston-Salem Foundation in honor of his late grandfather. The foundation was created to highlight Chris’ dedication and love, both to his grandfather’s spirit and to the city of Winston-Salem, NC, for nurturing him from his days as a stand-out high school student-athlete to a national star at Wake Forest University.
+        <br> <br>
+        Celebrating 10 years of service to the community, Chris Paul and his family are extremely proud of their endowment to Wake Forest University. Annually awarding two scholarships (one athletic and one academic) to a Forsyth County, North Carolina student with the Nathaniel Jones Scholarship, in memory of Chris’ grandfather and mentor.
+        <br><br>
+        The foundation’s efforts are truly a family affair and with its 10-year anniversary, the foundation officially changed its name to the Chris Paul Family Foundation to include the involvement of Chris’ parents, wife, brother, sister-in-law and extended family members.
+        <br><br>
+        The foundation’s emphasis on community involvement has won them the NBA’s Community Assist Award three times in Chris’ 10-year career. The award is given to an NBA player that consistently shows passion for philanthropy and community service.
+    </p>
+    <p>
+        The Foundation partnerships with Feed the Children, Make-A-Wish, Salvation Army B&G Clubs, LA’s Best Afterschool programs, Leapz & Bounds and a number of other organizations, aim to support education, literacy and technology enrichment, health and wellness initiatives.
+        <br><br>
+        Recognized as a leader in the area of philanthropy, The Chris Paul Family Foundation will continue to use its platform to impact communities nationally and globally.
+        <br><br>
+        Chris Paul Family Foundation, Inc. (“CPFF”) is a Delaware nonprofit corporation operating through a fiscal sponsorship with Edward Charles Foundation, Inc. (Federal Tax ID: 26-4245043), a California not-for-profit public benefit corporation with federal tax-exempt status as a public charity from the IRS under Section 501(c)(3). Contributions to CPFF are tax-deductible.  
+        <br><br>
+        Chris Paul Family Foundation is also a component fund of The Winston-Salem Foundation, a nonprofit corporation having its principal office in Winston-Salem, North Carolina, and is defined by the Foundation as a donor-advised fund. The Winston-Salem Foundation is a 501 (c) (3) public charity (EIN 56-6037615) and has exclusive legal control over the assets contributed.
+    </p>
+</div>
+</main>
+
+<footer>
+    <div>Yipeng Chen</div>
+    <div><a href="mailto: chenyp@umich.edu">Email: chenyp@umich.edu</a></div>
+    <div>Personal Website: <a href="https://github.com/chenyipeng1">https://github.com/chenyipeng1</a></div>
+  </footer>
+
+
+<script>
+    window.onscroll = function(){
+        if($(document).scrollTop() > 20){
+            $("#myBtn").show();
+        }
+        else{
+            $("#myBtn").hide();
+        }
+    }
+    $("#myBtn").click(function(){
+        $(document).scrollTop(0)
+    });
+</script>
+</body>
+</html>

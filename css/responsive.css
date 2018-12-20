@@ -1,0 +1,104 @@
+  @media (min-width: 768px){
+    .back nav li{
+        display: inline;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets
+    ##Screen = B/w 481px to 767px
+  */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .part_graph{
+        text-align:center;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap: 10px;
+    }
+    #toc_container {
+        position: absolute;
+        top: 0vw;
+    }
+    #toc_container a{
+        color: black;
+    }
+    .back li a.current_page{
+        color: purple;
+        font-size: 1.2em;
+    }
+    .back{
+        background-image: none;
+        height: 20vh;
+    }
+    .back3 li a{
+        color: black;
+    }
+    #Vis{
+        display: none;
+    }
+    #Table{
+        width: 90vw;
+    }
+  } 
+  
+  /* 
+    ##Device = Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+  @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape){
+    .back nav li{
+        display: inline;
+    }
+    .back3 li a{
+        color: black;
+    }
+}
+
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+  
+  @media (max-width: 480px) {
+    .family_text{
+        position: relative;
+        text-align: justify;
+        width: 80vw;
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-gap: 2vw;
+    }
+    #toc_container {
+        position: absolute;
+        top: 0vw;
+    }
+    #toc_container a{
+        color: black;
+    }
+    .back li a.current_page{
+        color: purple;
+        font-size: 1.2em;
+    }
+    .back{
+        background-image: none;
+        height: 15vh;
+    }
+    .back3 li a{
+        color: black;
+    }
+    .media_img{
+        grid-template-columns:1fr;
+    }
+    #Vis{
+        display: none;
+    }
+    #Table{
+        width: 90vw;
+    }
+  }
+

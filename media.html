@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/system.css"> 
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link  rel="stylesheet" href='https://fonts.googleapis.com/css?family=Sofia'>
+</head>
+<body>
+
+
+
+<div class="back back3">
+    <header>
+        <a class="skip-main" href="#main-content">Skip to main content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">HomePage</a></li>
+                <li><a href = "stats.html">Court</a></li>
+                <li><a href = "partners.html">Partners</a></li>
+                <li><a class = "current_page" href = "media.html">Social Media</a></li>
+                <li><a href = "family.html">Family Foundation</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<main id = "main-content" tabindex="-1">
+        <button id="myBtn" title="Go to top">Top</button>
+
+<h1 class="title_text">
+        <i class="fas fa-bullseye"></i>Social Media
+</h1>
+
+<div class="media_img">
+    <a href="https://www.instagram.com/p/BnZigM9h9xo/?taken-by=cp3">
+        <img src="images/figure1.png"  alt = "ins_beach" />
+    </a> 
+    <a href="https://www.instagram.com/p/Bnjsk0UByK7/?taken-by=cp3">
+        <img src="images/media1.png"  alt = "ins_with mom" />
+    </a> 
+    <a href="https://twitter.com/9thwonder/status/1072732165144752128">
+        <img src="images/media2.jpg"  alt = "twitter_game-in" />
+    </a> 
+    <a href="https://twitter.com/9thwonder/status/1072732165144752128">
+        <img src="images/media3.jpg"  alt = "twitter_with children" />
+    </a> 
+</div>
+</main>
+
+<footer>
+    <div>Yipeng Chen</div>
+    <div><a href="mailto: chenyp@umich.edu">Email: chenyp@umich.edu</a></div>
+    <div>Personal Website: <a href="https://github.com/chenyipeng1">https://github.com/chenyipeng1</a></div>
+  </footer>
+
+
+
+  <script>
+        window.onscroll = function(){
+            if($(document).scrollTop() > 20){
+                $("#myBtn").show();
+            }
+            else{
+                $("#myBtn").hide();
+            }
+        }
+        $("#myBtn").click(function(){
+            $(document).scrollTop(0)
+        });
+    </script>
+</body>
+</html>

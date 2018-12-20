@@ -1,0 +1,319 @@
+body{
+	background-color: white;
+}
+
+main{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	color: rgb(3, 47, 53);
+	text-align: center;
+}
+
+h2.title_text{
+	font-family: 'Sofia';
+}
+
+.family_text{
+	position: relative;
+	text-align: justify;
+	width: 80vw;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap: 2vw;
+}
+
+.fontsize16{
+	font-size: 16pt;
+}
+
+.fontsize14{
+	font-family: 'Arial';
+	font-size: 14pt
+}
+
+.center{
+	text-align: center;
+}
+
+.clear{
+	clear:both;    
+}
+
+
+#toc_container {
+	background: none repeat scroll 0 0;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+/* #toc_container li, #toc_container ul, #toc_container ul li{
+
+    list-style: outside none none !important;
+} */
+#toc_container a{
+	color: white;
+	font-size: 1.2em;
+}
+.toc_list{
+	text-align: left;
+}
+
+.long_text p{
+	text-indent: 2em;
+
+}
+
+.media_img{
+	position: relative;
+	text-align:center;
+	width: 80vw;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap: 10px;
+}
+.media_img img{
+	width: 90%;
+}
+
+
+
+.back li a.current_page{
+	color: white;
+	font-size: 1.2em;
+}
+
+.back {
+	background-size:100%; 
+	height:60vh;
+	background-repeat: no-repeat;
+	position:relative; 
+	text-align: right;
+	top: -13pt; 
+	left: -6pt;
+}
+.back ul{
+	list-style-type: none;
+}
+.back1{
+	background-image:url('../images/chris_paul.jpg');
+}
+
+.back1 li a{
+	color: black;
+}
+
+.back2{
+	background-image:url('../images/chris_paul1.jpg');
+}
+
+.back2 li a{
+	color: black;
+}
+.back2 li a.current_page{
+	color: purple;
+	font-size: 1.2em;
+}
+.back3{
+	background-image:url('../images/chris_paul2.png');
+}
+
+.back3 nav{
+	color: white;
+}
+.back3 li a.current_page{
+	color: orange;
+	font-size: 1.2em;
+}
+.back3 li a{
+	color: white;
+}
+
+.back3 h1
+{
+	color: white;
+	text-align: left;
+}
+
+.back4{
+	background-image:url('../images/chris_paul3.jpg');
+}
+
+.back4 ul{
+	background-color: white;
+}
+
+.back4 li a{
+	color: black;
+}
+
+
+.back4 li a.current_page{
+	color: purple;
+}
+
+#stats_button{
+	width: 8%;
+	border-radius: 5px;
+	background-color: aliceblue;
+}
+#video_1{
+	text-align: center;
+}
+
+
+footer{
+	background-color: lightgray;
+	text-align: center;
+	margin-top: 5vw;
+}
+
+
+
+.interact_nav button{
+	height: 25px;
+  }
+  table {
+	   border-collapse: collapse;
+	   width: 100%;
+  }
+
+  th, td {
+	  text-align: left;
+	  padding: 8px;
+  }
+
+  tr:nth-child(even) {background-color: lightgoldenrodyellow;}
+
+  div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 120px;					
+    height: 40px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.area {
+    fill: orange;
+}
+
+.zoom {
+cursor: move;
+fill: none;
+pointer-events: all;
+}
+
+
+
+
+
+
+.grid{
+	position: relative;
+	width: 75%;
+	margin:0 auto;
+	/* display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px; */
+}
+
+
+
+
+.grid img{
+	width: 100%;
+	/* display: grid; */
+}
+
+.item {
+	position: absolute;
+	z-index: 1;
+  }
+  .item.muuri-item-dragging {
+	z-index: 3;
+  }
+  .item.muuri-item-releasing {
+	z-index: 2;
+  }
+  .item.muuri-item-hidden {
+	z-index: 0;
+  }
+  .item-content {
+	position: relative;
+	width: 95%;
+	height: 95%;
+  }
+
+
+
+  #myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+	background-color: #555;
+  }
+
+  /* to skip main content */
+  a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}

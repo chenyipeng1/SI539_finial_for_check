@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Court</title>
+    <link rel="stylesheet"  type="text/css" href="css/system.css"> 
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+    <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link  rel="stylesheet" href='https://fonts.googleapis.com/css?family=Sofia'>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/d3.v4.js" type="text/javascript"></script>
+    <script src="js/sorttable.js" type="text/javascript"></script>
+    <script src="js/stats_draw.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+</head>
+<body>
+
+<div class="back back1">
+    <header>
+        <a class="skip-main" href="#main-content">Skip to main content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">HomePage</a></li>
+                <li><a class = "current_page" href = "stats.html">Court</a></li>
+                <li><a href = "partners.html">Partners</a></li>
+                <li><a href = "media.html">Social Media</a></li>
+                <li><a href = "family.html">Family Foundation</a></li>
+            </ul>
+        </nav>
+        <div id="toc_container">
+            <ul class="toc_list">
+                <li><a href="#Vis">Data Visualization</a></li>
+                <li><a href="#Table">Table</a></li>
+            </ul>
+        </div>
+    </header>
+
+</div>
+
+<main id = "main-content" tabindex="-1">
+        <button id="myBtn" title="Go to top">Top</button>
+
+<h1 class="title_text">
+        <i class="fas fa-basketball-ball"></i>Court
+</h1>
+
+<div id="Vis">
+<p class="fontsize16">
+    Visualization
+</p>
+<select aria-label="draw" id="draw">
+          <option label="PTS" value="PTS">Point</option>
+          <option label="2P" value="2P">Two Point</option>
+          <option label="2P%" value="2P%">Two Point %</option>
+          <option label="2PA" value="2PA">Two Point Attempt</option>
+          <option label="3P" value="3P">Three Point</option>
+          <option label="3P%" value="3P%">Three Point %</option>
+          <option label="3PA" value="3PA">Three Point Attempt</option>
+          <option label="eFG%" value="eFG%">Effective Field Goal</option>
+          <option label="AST" value="AST">Assist</option>
+          <option label="DRB" value="DRB">Deffensive Rebound</option>
+          <option label="ORB" value="ORB">Offensive Rebound</option>
+          <option label="BLK" value="BLK">Block</option>
+          <option label="STL" value="STL">Steal</option>
+          <option label="TOV"  value="TOV">Turnover</option>
+          <option label="TOV" value="TOV">Field Goal</option>
+          <option label="FG%" value="FG%">Field Goal %</option>
+          <option label="FGA" value="FGA">Field Goal Attempt</option>
+        </select>
+
+    <svg style="display:block" width="960px" height="600px" id="v4"></svg>
+</div>
+
+<div id="Table">
+<p class="fontsize16">
+    Professional career (sortable)
+</p>
+<table class="sortable" id="add_table">
+    <tr>
+        <th>Season</th>
+        <th>Point</th>
+        <th>Three Point %</th>
+        <th>Three Point Attempt</th>
+        <th>Minute</th>
+        <th>Rebound</th>
+        <th>Assist</th>
+        <th>Steal</th>
+        <th>Block</th>
+        <th>Turnover</th>
+        <th>Personal Foul</th>
+        <th>Field Goal %</th>
+        <th>Field Goal Attempt</th>
+    </tr>
+</table>
+
+</div>
+
+
+</main>
+
+
+
+
+<footer>
+    <div>Yipeng Chen</div>
+    <div><a href="mailto: chenyp@umich.edu">Email: chenyp@umich.edu</a></div>
+    <div>Personal Website: <a href="https://github.com/chenyipeng1">https://github.com/chenyipeng1</a></div>
+  </footer>
+
+
+  <script>
+        window.onscroll = function(){
+            if($(document).scrollTop() > 20){
+                $("#myBtn").show();
+            }
+            else{
+                $("#myBtn").hide();
+            }
+        }
+        $("#myBtn").click(function(){
+            $(document).scrollTop(0)
+        });
+    </script>
+</body>
+</html>
